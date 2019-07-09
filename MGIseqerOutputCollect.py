@@ -9,9 +9,9 @@ def help_info():
 	info='''
 ============================================================================
 Usage:
-	python MGIseqerOutputCollect.py <chip name> <date:20190101> <outdir>
+	python MGIseqerOutputCollect.py <flowcell name> <ending date> <outdir>
 Example:
-	python MGIseqerOutputCollect.py V300018621 20190101 D:\tmp
+	python MGIseqerOutputCollect.py V300018621 20190101 D:\CopyData
 Version:
 	V1.0.0.0
 Note:
