@@ -10,7 +10,7 @@ Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen.
 ## Tutorial 
 #### -step1: edit `run.bat` file
 - Open the `run.bat` file with notepad++ or other text editors. 
-- Change the **chip name** and **date**. 
+- Change the **flowcell name** and **sequencing ending date**. 
 - if you want to collect the whole files to a new address expcept `D:\CopyData`, please provide the **destination directory**.  
 #### -step2: store the `run.bat` file 
 #### -step3: open `cmd` by input `win+R` 
