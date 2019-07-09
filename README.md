@@ -14,7 +14,7 @@ Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen.
 - if you want to collect the whole files to a new address expcept `D:\CopyData`(default directory), please provide the **destination directory**.  
 #### -step2: store the `run.bat` file 
 #### -step3: open `cmd` by input `win+R` 
-#### -step4: drag the `run.bat` file to `cmd` and run it (recommand) 
+#### -step4: drag the `run.bat` file to `cmd` and run it (recommended) 
 
 ## Python Script Usage
 ```
