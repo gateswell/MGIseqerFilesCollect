@@ -5,11 +5,11 @@ Contact with me by send email to `caoshuhuan@yeah.net` when some bugs happen.
 
 ## Prerequisites
 - make sure python has been added to Windows PATH (ref https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path)
-- One bat file and python script are provided, download this repository to D:\ and uncompress it. make sure the address is **D:\\** before use. 
+- One **bat** file and **python script** are provided, download this repository to D:\ and uncompress it. make sure the address is **D:\\** before use. 
 
 ## Tutorial 
 #### -step1: edit `run.bat` file
-- Open the `.bat` file with notepad++ or other text editors. 
+- Open the `run.bat` file with notepad++ or other text editors. 
 - Change the **chip name** and **date**. 
 - if you want collect the whole files to a new address expcept `D:\CopyData`, please provide the **destination directory**.  
 #### -step2: store the `run.bat` file 
