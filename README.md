@@ -5,7 +5,7 @@ Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen.
 
 ## Prerequisites
 - make sure python has been added to Windows PATH (ref https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path)
-- One **bat** file and **python script** are provided, download this repository to D:\ and uncompress it. make sure the address is **D:\\** before use. 
+- One **bat** file and **python script** are provided, download this repository to D:\ and uncompress it. make sure the uncompress address is **D:\\** before use!  
 
 ## Tutorial 
 #### -step1: edit `run.bat` file
