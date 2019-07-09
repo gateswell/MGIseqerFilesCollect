@@ -3,7 +3,7 @@
 
 import re,os,sys
 import time,datetime
-from shutil import copyfile
+from shutil import copyfile,copytree
 
 def help_info():
 	info='''
@@ -17,7 +17,7 @@ Version:
 Note:
 	The Script can be run by python2 or python3 
 	outdir will be created if outdir unexists, the default outdir is D:\CopyData
-	contact with caoshuhuan@yeah.net if any bug happened during runing.
+	contact caoshuhuan@yeah.net if any bug happened during runing.
 ============================================================================
 '''
 	print(info.rstrip()) 
@@ -44,20 +44,21 @@ def get_days(date,num=10):	#date format:20190101
 def copy_DataThumbFOVFigs(dir,chipname,outdir):
 	try :
 		for lane in os.listdir(dir):
-			if lane != 'Metrics':
+			#if lane != 'Metrics':
+			if re.match(r'L',lane):
 				if not os.path.exists(outdir+'\\'+chipname+'\\'+lane):
 					os.makedirs(outdir+'\\'+chipname+'\\'+lane)
 					
-				for files in os.listdir(dir+'\\'+lane+'\\S01'):
+				for files in os.listdir(dir+'\\'+lane+'\\S001'):
 					#if files.startswith('Thumbnail'):	#copy thumbnail figures
 					if re.search(r'C004R036|Thumbnail',files):
-						fullname=dir+'\\'+lane+'\\S01\\'+files
+						fullname=dir+'\\'+lane+'\\S001\\'+files
 						outputname=outdir+'\\'+chipname+'\\'+lane+'\\'+files
 						if not os.path.exists(outputname):
 							copyfile(fullname,outputname)
 							sys.stdout.write(print_time()+'Copy file: '+fullname+'\n')
 					else:
-						sys.stdout.write('No such files: '+files+' \n')
+						#sys.stdout.write('No such files: '+files+' \n')
 						continue
 					'''if re.search(r'C004R036',files):	#copy FOV C004R036 figures
 						fullname=dir+'\\'+lane+'\\S01\\'+files
@@ -74,16 +75,23 @@ def copy_DataThumbFOVFigs(dir,chipname,outdir):
 		sys.stdout.write('No such dir: '+dir)
 		raise e
 
-def copy_Metrics(dir,chipname,outdir):
+def copy_Metrics(dir,chipname,outdir):	#copy Maps dir 
 	try:
 		if not os.path.exists(outdir+'\\'+chipname+'\\Metrics'):
 			os.makedirs(outdir+'\\'+chipname+'\\Metrics')
 		for Mfile in os.listdir(dir):
-			fullname=dir+'\\'+Mfile
-			outputname=outdir+'\\'+chipname+'\\Metrics\\'+Mfile
-			if not os.path.exists(outputname):
-				copyfile(fullname,outputname)
-				sys.stdout.write(print_time()+'Copy file: '+fullname+'\n')
+			if Mfile.startswith('Maps'):
+				fullname=dir+'\\'+Mfile
+				outputname=outdir+'\\'+chipname+'\\Metrics\\'+Mfile
+				if not os.path.exists(outputname):
+					copytree(fullname,outputname)
+					sys.stdout.write(print_time()+'Copy dir: '+fullname+'\n')
+			else:
+				fullname=dir+'\\'+Mfile
+				outputname=outdir+'\\'+chipname+'\\Metrics\\'+Mfile
+				if not os.path.exists(outputname):
+					copyfile(fullname,outputname)
+					sys.stdout.write(print_time()+'Copy file: '+fullname+'\n')
 	except IOError as e:
 		sys.stdout.write('No such dir: '+dir)
 		raise e
@@ -102,7 +110,7 @@ def copy_ResultStatHtml(dir,chipname,outdir):
 				'''else:
 					sys.stdout.write(outputname+'exists.\n')
 					continue'''
-			if re.search(r'html',files):
+			if re.search(r'allCycleHeatmap|bestFovReport|heatmapReport|summaryReport',files):
 				fullname=dir+'\\'+lane+'\\'+files
 				outputname=outdir+'\\'+chipname+'\\'+lane+'\\'+files
 				if not os.path.exists(outputname):
@@ -145,6 +153,7 @@ def copy_processor(dir,date,chipname,outdir):
 					copyfile(fullname,outputname)
 					sys.stdout.write(print_time()+'Copy file: '+fullname+'\n')
 		else:
+			continue
 			sys.stdout.write('No Such File or directory: '+txt+'\n')
 
 def main():
@@ -153,7 +162,7 @@ def main():
 	dirM="D:\\Data\\"+chipname+"\\Metrics"
 	dirR="D:\\Result\\OutputFq\\"+chipname
 	dirL="C:\\BGI\\Logs"
-	dirZ='C:\\ZebraCallV2\\V1.0.7.197'
+	dirZ='C:\\ZebraCallV2\\1.0.7.197'
 	date=sys.argv[2]
 	outdir=''
 	if len(sys.argv) ==4:
