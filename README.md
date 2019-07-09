@@ -11,7 +11,7 @@ Contact with me by send email to `caoshuhuan@yeah.net` when some bugs happen.
 #### -step1: edit `run.bat` file
 - Open the `run.bat` file with notepad++ or other text editors. 
 - Change the **chip name** and **date**. 
-- if you want collect the whole files to a new address expcept `D:\CopyData`, please provide the **destination directory**.  
+- if you want to collect the whole files to a new address expcept `D:\CopyData`, please provide the **destination directory**.  
 #### -step2: store the `run.bat` file 
 #### -step3: double dial `run.bat` file to run it or run it by `cmd`(recommand) 
 
@@ -20,5 +20,5 @@ Contact with me by send email to `caoshuhuan@yeah.net` when some bugs happen.
 Usage:
 	python MGIseqerOutputCollect.py <chip name> <date> [outdir]
 Example:
-	python D:\Scripts\MGIseqerOutputCollect.py V300018621 20190101 D:\tmp
+	python D:\Scripts\MGIseqerOutputCollect.py V300018621 20190101 D:\CopyData
 ```
