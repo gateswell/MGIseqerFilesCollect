@@ -1,7 +1,7 @@
 # MGIseqerOutputCollect 
 ## Description 
-The script is use to collect some important files such as `SummaryReport.html` for troubleshooting, contact with our **FAS** colleagues with email.
-Contact with me by send email to `caoshuhuan@yeah.net` when some bugs happen. 
+The script is use to collect some important files such as `SummaryReport.html` for troubleshooting, contact our **FAS** colleagues with email.
+Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen. 
 
 ## Prerequisites
 - make sure python has been added to Windows PATH (ref https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path)
@@ -13,7 +13,8 @@ Contact with me by send email to `caoshuhuan@yeah.net` when some bugs happen.
 - Change the **chip name** and **date**. 
 - if you want to collect the whole files to a new address expcept `D:\CopyData`, please provide the **destination directory**.  
 #### -step2: store the `run.bat` file 
-#### -step3: double dial `run.bat` file to run it or run it by `cmd`(recommand) 
+#### -step3: open `cmd` by input `win+R` 
+#### -step4: drag the `run.bat` file to `cmd` and run it (recommand) 
 
 ## Python Script Usage
 ```
