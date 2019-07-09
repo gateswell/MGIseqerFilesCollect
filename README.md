@@ -21,5 +21,5 @@ Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen.
 Usage:
 	python MGIseqerOutputCollect.py <flowcell name> <ending date> [outdir]
 Example:
-	python D:\Scripts\MGIseqerOutputCollect.py V300018621 20190101 D:\CopyData
+	python D:\MGIseqerFilesCollect-master\MGIseqerOutputCollect.py V300018621 20190101 D:\CopyData
 ```
