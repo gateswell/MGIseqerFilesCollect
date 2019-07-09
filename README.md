@@ -19,7 +19,7 @@ Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen.
 ## Python Script Usage
 ```
 Usage:
-	python MGIseqerOutputCollect.py <chip name> <date> [outdir]
+	python MGIseqerOutputCollect.py <flowcell name> <ending date> [outdir]
 Example:
 	python D:\Scripts\MGIseqerOutputCollect.py V300018621 20190101 D:\CopyData
 ```
