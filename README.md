@@ -1,4 +1,4 @@
-# MGIseqerOutputCollect 
+# MGIseqerFilesCollect 
 ## Description 
 The script is use to collect some important files such as `SummaryReport.html` for troubleshooting, contact our **FAS** colleagues with email.
 Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen. 
