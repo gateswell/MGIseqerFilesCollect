@@ -196,7 +196,7 @@ def main():
 	dirZ='C:\\ZebraCallV2\\1.0.7.197'
 	date=sys.argv[2]
 	outdir=''
-	cycles=sys.argv[3]
+	cycles=collect_cycles(sys.argv[3])
 	if len(sys.argv) ==5:
 		outdir=sys.argv[4]
 	elif len(sys.argv) ==4:
