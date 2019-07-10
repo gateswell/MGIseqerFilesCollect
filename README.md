@@ -4,8 +4,8 @@ The script is use to collect some important files such as `SummaryReport.html` f
 Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen. 
 
 ## Version history 
-The current version is V1.0.1 
-You can download the other historic version at https://github.com/gateswell/MGIseqerFilesCollect/releases 
+The current version is V1.0.1  
+You can download the other historic version at https://github.com/gateswell/MGIseqerFilesCollect/releases  
 
 ## Prerequisites
 - make sure python has been added to Windows PATH (ref https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path)
