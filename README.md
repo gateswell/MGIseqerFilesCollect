@@ -26,4 +26,7 @@ Usage:
 	python MGIseqerOutputCollect.py <flowcell name> <ending date> <cycle:S001-S010,S101,S120|None> [outdir]
 Example:
 	python D:\MGIseqerFilesCollect-master\MGIseqerOutputCollect.py V300018621 20190101 S001 D:\CopyData
+	python MGIseqerOutputCollect.py V300018621 20190101 S001-S010 D:\CopyData
+	python MGIseqerOutputCollect.py V300018621 20190101 S001-S010,S101,S120 D:\CopyData
+	python MGIseqerOutputCollect.py V300018621 20190101 None D:\CopyData
 ```
