@@ -5,7 +5,7 @@ Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen.
 
 ## Version history 
 The current version is V1.0.1  
-You can download the other historic version at [releases]: <https://github.com/gateswell/MGIseqerFilesCollect/releases>  
+You can download the other historic version at [releases](https://github.com/gateswell/MGIseqerFilesCollect/releases "lastest: v1.0.1")  
 
 ## Prerequisites
 - make sure python has been added to Windows PATH (ref https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path)
