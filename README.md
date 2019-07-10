@@ -1,7 +1,7 @@
 # MGIseqerFilesCollect 
 ## Description 
 The script is use to collect some important files such as `SummaryReport.html` for troubleshooting, contact our **FAS** colleagues with email.
-Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen. 
+Contact me by sending email to **caoshuhuan@yeah.net** when some bugs happen. 
 
 ## Version history 
 The current version is V1.0.1  
@@ -23,7 +23,7 @@ You can also download the historic versions at [releases](https://github.com/gat
 ## Python Script Usage
 ```
 Usage:
-	python MGIseqerOutputCollect.py <flowcell name> <ending date> [outdir]
+	python MGIseqerOutputCollect.py <flowcell name> <ending date> <cycle:S001-S010,S101,S120|None> [outdir]
 Example:
-	python D:\MGIseqerFilesCollect-master\MGIseqerOutputCollect.py V300018621 20190101 D:\CopyData
+	python D:\MGIseqerFilesCollect-master\MGIseqerOutputCollect.py V300018621 20190101 S001 D:\CopyData
 ```
