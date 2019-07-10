@@ -3,6 +3,10 @@
 The script is use to collect some important files such as `SummaryReport.html` for troubleshooting, contact our **FAS** colleagues with email.
 Contact me by sending email to `caoshuhuan@yeah.net` when some bugs happen. 
 
+## Version history 
+The current version is V1.0.1 
+You can download the other historic version at https://github.com/gateswell/MGIseqerFilesCollect/releases 
+
 ## Prerequisites
 - make sure python has been added to Windows PATH (ref https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path)
 - One **bat** file and **python script** are provided, download this repository to D:\ and uncompress it. make sure the uncompress address is **D:\\** before use!  
