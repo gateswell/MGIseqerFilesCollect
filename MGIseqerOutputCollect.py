@@ -55,8 +55,8 @@ def collect_cycles(cycle):	#S001-S003,S100,S152
 			for tmp in cycle.split(','):
 				if re.search(r'-',tmp):	#S001-S003
 					sta,end=tmp.split('-')	#S001 S003
-					sta=int(sta.lstrip('S'))	#001
-					end=int(end.lstrip('S'))	#003
+					sta=int(sta.lstrip('S'))	#1
+					end=int(end.lstrip('S'))	#3
 					for i in range(sta,end+1):
 						i="{:0>3d}".format(i)	#001 002 003
 						cycles.append('S'+i)		#S001 S002 S003
@@ -69,6 +69,8 @@ def collect_cycles(cycle):	#S001-S003,S100,S152
 			for i in range(sta,end+1):
 				i="{:0>3d}".format(i)
 				cycles.append('S'+i)
+		else:
+			cycles.append(cycle)
 	else:
 		cycles=['None']
 	return cycles
